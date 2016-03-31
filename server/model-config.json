@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "IlpPlan": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlpClass": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlpClassStudent": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlpField": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlsApp": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlpSchoolyear": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlpTeacher": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlsFieldDef": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlsFieldQuestions": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlsSectionDef": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwClassStudentsWithIlp": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwClassTeachers": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwIlpFields": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwStudents": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

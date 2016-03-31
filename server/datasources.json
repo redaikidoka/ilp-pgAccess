@@ -1,0 +1,14 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "pgilp": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "ilp",
+    "name": "pgilp",
+    "user": "pol",
+    "connector": "postgresql"
+  }
+}

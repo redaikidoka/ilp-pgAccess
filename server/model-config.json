@@ -50,12 +50,6 @@
     "$promise": {},
     "$resolved": true
   },
-  "IlpField": {
-    "dataSource": "pgilp",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
   "IlsApp": {
     "dataSource": "pgilp",
     "public": true,
@@ -104,13 +98,19 @@
     "$promise": {},
     "$resolved": true
   },
-  "VwIlpFields": {
+  "VwStudents": {
     "dataSource": "pgilp",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "VwStudents": {
+  "IlpField": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwIlpFields": {
     "dataSource": "pgilp",
     "public": true,
     "$promise": {},

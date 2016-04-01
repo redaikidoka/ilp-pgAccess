@@ -42,6 +42,38 @@
       },
       "_selectable": true
     },
+    "sCreate": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_create",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "sUpdate": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_update",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
     "sUser": {
       "type": "Number",
       "required": false,
@@ -74,38 +106,6 @@
       },
       "_selectable": false
     },
-    "sUpdate": {
-      "type": "String",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "s_update",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
-    "sCreate": {
-      "type": "String",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "s_create",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
     "idPlan": {
       "type": "Number",
       "required": true,
@@ -113,7 +113,7 @@
       "precision": 32,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_ilp",
+        "columnName": "id_plan",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": 32,

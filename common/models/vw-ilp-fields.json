@@ -10,6 +10,22 @@
     "table": "vw_ilp_fields"
   },
   "properties": {
+    "sectionName": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "section_name",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
     "sectionDescription": {
       "type": "String",
       "required": false,
@@ -26,6 +42,38 @@
       },
       "_selectable": true
     },
+    "sectionTitle": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "section_title",
+        "dataType": "character varying",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "fieldName": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "field_name",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
     "fieldDescription": {
       "type": "String",
       "required": false,
@@ -36,6 +84,22 @@
         "columnName": "field_description",
         "dataType": "text",
         "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "fieldType": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "field_type",
+        "dataType": "character varying",
+        "dataLength": 20,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
@@ -74,6 +138,38 @@
       },
       "_selectable": true
     },
+    "displayOrder": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "display_order",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "updatesFeed": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "updates_feed",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
     "feedsTo": {
       "type": "String",
       "required": false,
@@ -84,6 +180,22 @@
         "columnName": "feeds_to",
         "dataType": "character varying",
         "dataLength": 45,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "isRequired": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "is_required",
+        "dataType": "boolean",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
@@ -220,34 +332,19 @@
       },
       "_selectable": true
     },
-    "sectionName": {
-      "type": "String",
-      "required": true,
-      "length": 30,
-      "precision": null,
-      "scale": null,
+    "idPlan": {
+      "type": "Number",
+      "id": true,
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
       "postgresql": {
-        "columnName": "section_name",
-        "dataType": "character varying",
-        "dataLength": 30,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "fieldType": {
-      "type": "String",
-      "required": true,
-      "length": 20,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "field_type",
-        "dataType": "character varying",
-        "dataLength": 20,
-        "dataPrecision": null,
-        "dataScale": null,
+        "columnName": "id_plan",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
         "nullable": "YES"
       },
       "_selectable": true
@@ -278,103 +375,6 @@
       "scale": 0,
       "postgresql": {
         "columnName": "id_student",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "sectionTitle": {
-      "type": "String",
-      "required": true,
-      "length": 20,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "section_title",
-        "dataType": "character varying",
-        "dataLength": 20,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "updatesFeed": {
-      "type": "Boolean",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "updates_feed",
-        "dataType": "boolean",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "isRequired": {
-      "type": "Boolean",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "is_required",
-        "dataType": "boolean",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "fieldName": {
-      "type": "String",
-      "required": true,
-      "length": 30,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "field_name",
-        "dataType": "character varying",
-        "dataLength": 30,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "displayOrder": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "display_order",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "idPlan": {
-      "type": "Number",
-      "id": true,
-      "required": false,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_ilp",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": 32,

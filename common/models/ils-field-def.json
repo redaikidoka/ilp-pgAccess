@@ -106,22 +106,6 @@
       },
       "_selectable": true
     },
-    "layoutColumn": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "layout_column",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
     "displayOrder": {
       "type": "Number",
       "required": false,
@@ -202,38 +186,6 @@
       },
       "_selectable": false
     },
-    "displayGroup": {
-      "type": "String",
-      "required": false,
-      "length": 20,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "display_group",
-        "dataType": "character varying",
-        "dataLength": 20,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
-    "displayGroupOrder": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "display_group_order",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "YES"
-      },
-      "_selectable": true
-    },
     "sCreate": {
       "type": "String",
       "required": false,
@@ -278,6 +230,38 @@
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "isAnnual": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "is_annual",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idFieldGroup": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_field_group",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
         "nullable": "YES"
       },
       "_selectable": true

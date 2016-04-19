@@ -1,5 +1,5 @@
 {
-  "name": "IlpPlan",
+  "name": "IlsFieldGroup",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,56 +7,40 @@
   },
   "postgresql": {
     "schema": "public",
-    "table": "ilp_plan"
+    "table": "ils_field_group"
   },
   "properties": {
-    "idSchoolyear": {
-      "type": "Number",
+    "groupName": {
+      "type": "String",
       "required": true,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
+      "length": 20,
+      "precision": null,
+      "scale": null,
       "postgresql": {
-        "columnName": "id_schoolyear",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
+        "columnName": "group_name",
+        "dataType": "character varying",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "NO"
       },
       "_selectable": false
     },
-    "intakeDone": {
-      "type": "Boolean",
+    "sCreate": {
+      "type": "String",
       "required": false,
       "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "intake_done",
-        "dataType": "boolean",
+        "columnName": "s_create",
+        "dataType": "timestamp without time zone",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
       },
       "_selectable": true
-    },
-    "idStudent": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_student",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "NO"
-      },
-      "_selectable": false
     },
     "sUser": {
       "type": "Number",
@@ -74,22 +58,6 @@
       },
       "_selectable": true
     },
-    "sCreate": {
-      "type": "String",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "s_create",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
     "sUpdate": {
       "type": "String",
       "required": false,
@@ -102,11 +70,27 @@
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "NO"
+        "nullable": "YES"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "idPlan": {
+    "groupWidth": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "group_width",
+        "dataType": "character varying",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idFieldGroup": {
       "type": "Number",
       "id": true,
       "required": false,
@@ -114,7 +98,7 @@
       "precision": 32,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_plan",
+        "columnName": "id_field_group",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": 32,
@@ -122,6 +106,22 @@
         "nullable": "NO"
       },
       "_selectable": false
+    },
+    "groupOrder": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "group_order",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
     }
   },
   "validations": [],

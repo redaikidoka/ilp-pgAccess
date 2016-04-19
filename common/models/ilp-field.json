@@ -10,24 +10,8 @@
     "table": "ilp_field"
   },
   "properties": {
-    "idFieldDef": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 32,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_field_def",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": 32,
-        "dataScale": 0,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
     "contents": {
-      "type": "String",
+      "type": "string",
       "required": false,
       "length": null,
       "precision": null,
@@ -42,40 +26,8 @@
       },
       "_selectable": true
     },
-    "sCreate": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "s_create",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
-    "sUpdate": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "s_update",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      },
-      "_selectable": false
-    },
     "sUser": {
-      "type": "Number",
+      "type": "number",
       "required": false,
       "length": null,
       "precision": 32,
@@ -90,8 +42,56 @@
       },
       "_selectable": true
     },
+    "sUpdate": {
+      "type": "date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_update",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "sCreate": {
+      "type": "date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_create",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "isHistorical": {
+      "type": "boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "is_historical",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
     "idStudent": {
-      "type": "Number",
+      "type": "number",
       "required": true,
       "length": null,
       "precision": 32,
@@ -107,7 +107,7 @@
       "_selectable": false
     },
     "idPlan": {
-      "type": "Number",
+      "type": "number",
       "required": true,
       "length": null,
       "precision": 32,
@@ -122,8 +122,24 @@
       },
       "_selectable": false
     },
+    "idFieldDef": {
+      "type": "number",
+      "required": true,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_field_def",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
     "idField": {
-      "type": "Number",
+      "type": "number",
       "id": true,
       "required": false,
       "length": null,

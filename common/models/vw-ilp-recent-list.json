@@ -1,0 +1,163 @@
+{
+  "name": "VwIlpRecentList",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "schema": "public",
+    "table": "vw_ilp_recent_list"
+  },
+  "properties": {
+    "sUpdate": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_update",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idPlan": {
+      "type": "number",
+      "id": true,
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_plan",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idSchoolyear": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_schoolyear",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idStudent": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_student",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "intakeDone": {
+      "type": "boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "intake_done",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "studentName": {
+      "type": "string",
+      "required": false,
+      "length": 150,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "student_name",
+        "dataType": "character varying",
+        "dataLength": 150,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "teacherName": {
+      "type": "string",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "teacher_name",
+        "dataType": "character varying",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "yearName": {
+      "type": "string",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "year_name",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "sUser": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "s_user",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

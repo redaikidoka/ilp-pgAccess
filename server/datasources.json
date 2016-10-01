@@ -4,15 +4,6 @@
     "connector": "memory"
   },
   "pgilp": {
-    "host": "ec2-54-225-103-29.compute-1.amazonaws.com",
-    "port": 5432,
-    "database": "d38qa7uj8pd9jt",
-    "name": "pgilp",
-    "user": "tyqzmscszkbiih",
-    "password":"d_5mpcn0iKzw-n0dmt0dwsIlUA",
-    "connector": "postgresql"
-  },
-  "pglocal": {
     "host": "localhost",
     "port": 5432,
     "database": "ilp",

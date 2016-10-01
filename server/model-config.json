@@ -115,5 +115,23 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "VwIlpRecentList": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VwLoginList": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "IlsUserLog": {
+    "dataSource": "pgilp",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

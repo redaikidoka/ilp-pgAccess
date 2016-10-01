@@ -1,0 +1,131 @@
+{
+  "name": "VwLoginList",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "schema": "public",
+    "table": "vw_login_list"
+  },
+  "properties": {
+    "sCreate": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_create",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "sUpdate": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "s_update",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "info": {
+      "type": "string",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "info",
+        "dataType": "text",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idUser": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_user",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "idUlog": {
+      "type": "number",
+      "id": true,
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "id_ulog",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "sUser": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "s_user",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "teacherName": {
+      "type": "string",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "teacher_name",
+        "dataType": "character varying",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
